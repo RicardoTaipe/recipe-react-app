@@ -1,0 +1,64 @@
+@import "../../styles.scss";
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.recipe__title{
+  text-align: center;
+  font-family: 'Galada', cursive;
+  padding-top: 0.8rem;
+}
+
+.recipe__img{
+  box-sizing: 'border-box';
+  border-radius: 1.5em;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  max-height: 80vh;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+  0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+.ingredients{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+  grid-auto-rows: auto;
+  justify-items: center;
+  grid-gap: 0.8em;
+}
+
+.card-ingredients__title, .card-ingredients__measure{
+  list-style: none;
+  text-align: center;
+}
+
+.steps-box{
+  margin: 1rem;
+}
+
+.steps__title{
+  padding: 0.5em;
+  list-style-position: inside;
+  color: $mainBlack;
+  &:nth-child(odd){
+    background: $mainGreen;
+  }
+}
+
+@media screen and(min-width: 768px){
+  .box-above{
+    display: flex;
+    align-items: center;
+  }
+  .recipe__img{
+    flex:1;
+  }
+  .ingredients{
+    flex: 1;
+    margin: 1rem;
+  }
+}

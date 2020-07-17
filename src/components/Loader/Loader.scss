@@ -1,0 +1,23 @@
+@import "../../styles.scss";
+
+.loader {
+  border: .5em solid #706a6a;
+  border-radius: 50%;
+  border-top: .5em solid $mainGreen;
+  width: 2em;
+  height: 2em;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin : 2em auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,39 @@
+@import "../../styles.scss";
+Link{
+  text-decoration: none;
+}
+.recipe{
+  align-self: flex-start;
+  height: auto;
+  background: $mainGreen;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  margin: 1.4rem 1rem;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+  0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+
+  transition: all .2s ease-out;
+  img{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    display: block;
+  }
+  &:hover{
+    transform: scale(1.1)
+  }
+}
+
+.recipe-info{
+  padding: 1rem 0.5rem;
+  height: auto;
+  background: $mainGreen;
+  h3{
+    text-align: center;
+    text-transform: capitalize;
+    color: $mainBlack;
+    margin: 0.3rem 0 0.6rem 0;
+    font-family: 'Galada', cursive;
+  }
+}
